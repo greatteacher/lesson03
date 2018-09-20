@@ -1,0 +1,41 @@
+﻿1. Создайте виртуальное окружение в папке где находится ваш бот для Телеграмма
+создала
+Содержимое папки C:\Projects\lesson1\olgabot
+
+8.09.2018  16:26    <DIR>          .
+8.09.2018  16:26    <DIR>          ..
+2.09.2018  15:58                18 .gitignore
+8.09.2018  13:24           400 015 bot.log
+8.09.2018  13:24             2 400 bot.py
+8.09.2018  16:26             2 207 bot2.py
+8.09.2018  16:26             2 589 bot3.py
+7.09.2018  18:16    <DIR>          env
+2.09.2018  15:58               192 settings.py
+2.09.2018  15:58    <DIR>          __pycache__
+              6 файлов        407 421 байт
+              4 папок  145 258 041 344 байт свободно
+ 
+
+
+2 Активируйте виртуальное окружение
+
+ 
+
+ 
+активировала.... появилось (env) 
+
+
+3    Запустите бота и убедитесь, что python не может импортировать python-telegram-bot
+   	!убедилась 
+Traceback (most recent call last):
+  File "bot.py", line 1, in <module>
+    from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+ModuleNotFoundError: No module named 'telegram'
+
+4    Установите python-telegram-bot[socks] и убедитесь, что бот запускается
+запускается... убедилась
+5. Добавьте папку виртуального окружения в .gitignore
+бавила, теперь там 
+*.log
+settings.py
+env
