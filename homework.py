@@ -8,7 +8,7 @@ user_list = [
     ]
 with open('exporthm.csv', 'w', encoding='ANSI', newline='') as f:
     fields = ['name', 'job', 'age']
-    writer = csv.DictWriter(f, fields, delimiter=':')
+    writer = csv.DictWriter(f, fields, delimiter=';')
     writer.writeheader()
     for user in user_list:
         writer.writerow(user)
