@@ -1,0 +1,125 @@
+>>> daynow=datetime.now()\par
+>>> print(daynow)\par
+2018-09-17 19:41:26.580928\par
+\par
+>>> dtoday=datetime(2018,9,17)\par
+>>> print(dtoday)\par
+2018-09-17 00:00:00\par
+>>> yestd=datetime(2018,8,17)\par
+>>> daltaday=dtoday-yestd\par
+>>> print(daltaday)\par
+31 days, 0:00:00\par
+>>> print(daynow-daltaday)\par
+2018-08-17 19:41:26.580928\par
+>>> print('yesterday'+str(datetime.now()-deltamoth))\par
+yesterday2018-09-16 20:02:49.199290\par
+>>> print('yesterday was '+str(datetime.now()-deltamoth))\par
+yesterday was 2018-09-16 20:03:10.638516\par
+>>> print('month ago  was '+str(datetime.now()-daltaday))\par
+month ago  was 2018-08-17 20:04:04.585602\par
+\par
+\par
+>>> dy2=datetime(2001,1,1)\par
+>>> deltayear=dy2-dy1\par
+>>> print(deltayear)\par
+366 days, 0:00:00\par
+>>> dy3=datetime(2002,1,1)\par
+>>> deltayear=dy3-dy2\par
+>>> print(deltayear)\par
+365 days, 0:00:00\par
+>>> print('month ago  was '+str(datetime.now()-daltaday))\par
+month ago  was 2018-08-17 20:14:21.392881\par
+>>> print('year ago  was '+str(datetime.now()-deltayear))\par
+year ago  was 2017-09-17 20:14:53.747732\par
+>>>\par
+\par
+\par
+\lang1049\f0 >>> import datetime\par
+>>> print(datetime)\par
+<module 'datetime' from 'C:\\\\Users\\\\\'ec\'e0\'ec\'e0\\\\AppData\\\\Loca\par
+on36-32\\\\lib\\\\datetime.py'>\par
+>>> datetime.datetime.now()\par
+datetime.datetime(2018, 9, 15, 9, 31, 32, 214526)\par
+>>> datetime.date.today()\par
+datetime.date(2018, 9, 15)\par
+>>> d=datetime.datetime.now()\par
+>>> d\par
+datetime.datetime(2018, 9, 15, 9, 34, 9, 11494)\par
+>>> d.strftime('%d.%m.%Y')\par
+'15.09.2018'\par
+>>> d.strftime('%m/%d/%Y')\par
+'09/15/2018'\par
+>>> d.strftime('%a %m/%d/%Y')\par
+'Sat 09/15/2018'\par
+>>> d.strftime('%A %m/%d/%Y')\par
+'Saturday 09/15/2018'\par
+>>> d.strftime('%a %d %B %y')\par
+'Sat 15 September 18'\par
+>>> exit()\lang1033\f1\par
+}
+
+
+
+
+
+еще раз
+>>> dtoday=datetime(2018,9,17)
+>>> print(datetime.now())
+2018-09-21 20:12:31.210226
+>>> yestday=datetime(2018,9,16)
+>>> daydelta=dtoday-yestday
+>>> print(daydelta)
+1 day, 0:00:00
+>>> print('yesterday'+str(datetime.now()-daydelta))
+yesterday2018-09-20 20:17:19.154695
+
+>>> yestrd=((datetime.now()-daydelta))
+>>> print('Yesterday was '+str(yestrd.strftime('%A %d %B')))
+Yesterday was Thursday 20 September
+
+>>> week=datetime(2018,9,10)
+>>> print(week)
+2018-09-10 00:00:00
+>>> deltaweek=dtoday-week
+>>> print(deltaweek)
+7 days, 0:00:00
+>>> weekago=((datetime.now()-deltaweek))
+>>> print('A week ago  was  '+str(weekago.strftime('%A %d %B')))
+A week ago  was  Friday 14 September
+
+
+
+
+
+
+>>> from datetime import date, timedelta
+>>> delta=timedelta(days=1)
+>>> print(delta)
+1 day, 0:00:00
+>>> today-delta
+datetime.datetime(2018, 9, 20, 20, 9, 58, 931516)
+>>> mthdelta=timedelta(days=30)
+>>> today-mthdelta
+datetime.datetime(2018, 8, 22, 20, 9, 58, 931516)
+>>> mth=today-mthdelta
+>>> print('A mounth ago  was  '+str(mth
+A mounth ago  was  Wednesday 22 August
+>>> yeardelta=timedelta(days=365)
+>>> yearago=today-yeardelta
+>>> print('A year ago  was  '+str(yearago.strftime('%A %d %B')))
+A year ago  was  Thursday 21 September
+>>> print('A year ago  was  '+str(yearago.strftime('%Y year %A %d %B')))
+A year ago  was  2017 year Thursday 21 September
+
+
+
+
+
+
+
+
+
+
+
+
+
